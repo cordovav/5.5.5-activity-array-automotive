@@ -1,5 +1,5 @@
 //this includes the vehicle class as a module
-const VehicleModule = require("./vehicle").Vehicle
+const VehicleModule = require("vehicle.js")
 
 
 //Create a Car class that extends the Vehicle class (located in the vehicle.js).
@@ -14,25 +14,32 @@ class car extends VehicleModule {
         this.numberOfWheels = 4;
         this.maximumSpeed = 160;
         this.fuel = 10;
-        scheduleService = false;
+        this.scheduleService = false;
     }
 //Add the methods with psuedo logic
+
 //added load passanger method
 loadPassenger(num){
-    if(this.passengers < this.maximumPassenger)
-    console.log("There is room for more passengers")
-    return availableRoom == true
+    if(this.passengers < this.maximumPassenger);
+    console.log("There is room for more passengers");
+    return availableRoom == true;
 }
 
 //added the start method
 start() {
     if (this.fuel > 0) {
-        return this.started = true;
         console.log("engine started...!!!");
+        return this.started = true;
     } else {
-        return this.started = false;
         console.log("engine cannot start...");
+        return this.started = false;
     }
+}
+//added schedule service method
+scheduleService(mileage){
+    if(this.mileage > 3000 );
+    console.log("time for maintenance");
+    return scheduleService = true;
 }
 }
 
