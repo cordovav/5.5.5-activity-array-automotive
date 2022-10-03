@@ -17,6 +17,13 @@ class car extends VehicleModule {
         scheduleService = false;
     }
 //Add the methods with psuedo logic
+//added load passanger method
+loadPassenger(num){
+    if(this.passengers < this.maximumPassenger)
+    console.log("There is room for more passengers")
+    return availableRoom == true
+}
+
 //added the start method
 start() {
     if (this.fuel > 0) {
